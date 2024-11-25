@@ -9,6 +9,7 @@ RUN apt-get install -yy uuid-dev libfmt-dev libspdlog-dev libssl-dev libcurl4-op
 RUN apt-get install -yy libevent-dev liblz4-dev libzstd-dev libbz2-dev libgflags-dev libgoogle-glog-dev libsnappy-dev
 RUN apt-get install -yy openssh-server openssh-client
 RUN apt-get install -yy enscript ghostscript
+RUN apt-get install -yy gdb valgrind
 COPY build-init.sh /usr/local/bin/build-init.sh
 COPY generate_report.py /usr/local/bin/generate_report.py
 CMD /usr/bin/bash
